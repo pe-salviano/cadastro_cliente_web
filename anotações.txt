@@ -1,0 +1,49 @@
+Anotações projeto Cadastro cliente WEB com HTML5, CSS, validação com 
+JavaScript e lançamento no no Mysql com PHP (PDO).
+
+                                -------HTML-------
+
+*realizei a montagem do formulario através do HTML
+(utilizando div para cada input) assim, facilitando na hora de montar o
+stylo via CSS.				
+* No HTML utilzei classes para facilitar o agrupamento e stylo dos inputs.
+* Coloquei id para identificação e conexão via Javascript (assim facilitando na 
+criação de variáveis) 
+* Dentro de cada input coloquei um name para identificar e conectar ao banco de dados
+* Adicionei dois Icon para cada input (para verificação de válido  ou inválido)
+* coloquei um TEXTAREA para o cliente enviar a mensagem (não coloquei como obrigatório)
+* Botão é do tipo input para enviar o formulário ao clicar.
+
+
+				--------CSS---------
+
+*Adicionei um :ROOT para adicionar variáveis CSS e facilitar na hora de alguma manutenção na página
+*Removi a formatação original do HTML 
+*realizei o stylo dos inputs tudo junto através da mesma classe (indicada no HTML)
+*Validação de erro ou suceso (parte de stylo)  aplicando borda verde ou vermelha para os inputs, menssagem
+de erro, aplicando a cor dos ICON.
+
+				-----JavaScript-----
+
+* Selecionei todos os inputs atráves do ID utilizando o getElementById
+* Adicionei um evento ao formulario e botão submit (para enviar o formulário
+quando todas as validações estiverem corretas).
+*Criei uma função  (verificaInputs) para verificar todas as validações realizadas e retornar se está 
+preenchido corretamente, se está em branco ou se foi preenchido com valor inválido.
+- preenchido corretamente: verificação OK fica com a borda verde e o ICON verde
+- em branco: aparece uma mensagem em vermelho e o ICON vermelho, alertando que o campo é obrigatório.
+- valor inválido: aparece uma mensagem em vermelho e o ICON vermelho, alertando para verifiar o DADO digitado
+* criei uma função para realizar a validação de cada input e depois chamei essa função no validaInputs atribuindo 
+um valor.
+* Para realizar a validação de algumas inputs, utlizei o REGEX (Expressão regular) que facilita e diminui o código.
+
+
+				   -----MYSQL------
+*Utilizei o servidor local para conexão com o banco de dados (Wampserver) localhost
+*Não consegui realizar a conexão com o banco de dados utilizando o PHP e as validações do Javascript junto. Consegui apenas realizar a conexão quando foi com o PHP o Javascript não conextou.
+*Acredito que seja no momento de chamar o javascript ao clicar no botão,porém não consegui encontrar uma solução. 
+
+
+conclusão: consegui criar o formulário de cadastro e realizar as validações via JavaScript. conseguir acessar o banco de dados local Msql através do (Wampserver), porém apenas com o PHP. 
+
+
