@@ -39,7 +39,7 @@ session_start();
         ?>
         
         <!-- Formulario, toda a parte digitável-->
-        <form id="form" class="formulario" method="POST" action="proc_cad_msg.php">
+        <form id="form" class="formulario" method="POST" action="cadastro_msg.php">
             <!-- controle de formulário, comanda todas as div's abaixo -->
             <div class="controle__formulario ">
                 <label class="controle__formulario--informacao" for="nome__usuario">Nome</label>
